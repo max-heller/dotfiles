@@ -1,0 +1,45 @@
+{
+    "sshextension.serverList": [
+        {
+            "name": "brown-cs",
+            "host": "ssh.cs.brown.edu",
+            "port": 22,
+            "username": "mheller6",
+            "privateKey": "~/.ssh/brown-cs.pvk",
+            "path": "~/course/cs0330"
+        }
+    ],
+    "sshfs.configs": [
+        {
+            "root": "~/course/cs0330",
+            "host": "ssh.cs.brown.edu",
+            "port": 22,
+            "username": "mheller6",
+            "agent": "$SSH_AUTH_SOCK",
+            "privateKeyPath": ".ssh/brown-cs.pvk",
+            "name": "brown-cs"
+        }
+    ],
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line-thin",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.smoothScrolling": true,
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "wordWrapColumn",
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "onFocusChange",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "materialTheme.autoApplyIcons": true,
+    "search.smartCase": true,
+    "window.restoreFullscreen": true,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.panel.defaultLocation": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    "zenMode.restore": true
+}
