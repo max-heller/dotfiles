@@ -1,12 +1,11 @@
 {
     "sshextension.serverList": [
         {
-            "name": "brown-cs",
             "host": "ssh.cs.brown.edu",
+            "name": "brown-cs",
             "port": 22,
-            "username": "mheller6",
             "privateKey": "~/.ssh/brown-cs.pvk",
-            "path": "~/course/cs0330"
+            "username": "mheller6",
         }
     ],
     "sshfs.configs": [
@@ -25,21 +24,23 @@
     "editor.cursorStyle": "line-thin",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
     "editor.smoothScrolling": true,
     "editor.tabCompletion": "on",
-    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrap": "on",
     "files.autoGuessEncoding": true,
     "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "latex-workshop.view.pdf.viewer": "tab",
     "materialTheme.autoApplyIcons": true,
     "search.smartCase": true,
     "window.restoreFullscreen": true,
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Material Theme Palenight",
     "workbench.editor.tabCloseButton": "off",
     "workbench.panel.defaultLocation": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
-    "zenMode.restore": true
+    "zenMode.restore": true,
 }
