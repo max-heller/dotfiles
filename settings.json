@@ -1,13 +1,4 @@
 {
-    "sshextension.serverList": [
-        {
-            "host": "ssh.cs.brown.edu",
-            "name": "brown-cs",
-            "port": 22,
-            "privateKey": "~/.ssh/brown-cs.pvk",
-            "username": "mheller6",
-        }
-    ],
     "sshfs.configs": [
         {
             "root": "~/course/cs0330",
@@ -15,7 +6,7 @@
             "port": 22,
             "username": "mheller6",
             "agent": "$SSH_AUTH_SOCK",
-            "privateKeyPath": ".ssh/brown-cs.pvk",
+            "privateKeyPath": ".ssh/rsa_id",
             "name": "brown-cs"
         }
     ],

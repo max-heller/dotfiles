@@ -37,8 +37,8 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show drun
 
-# start rofi ssh
-bindsym $mod+s exec rofi -show ssh
+# connect to brown ssh
+bindsym $mod+s exec termite -e "ssh brown"
 
 # change focus
 bindsym $mod+j focus left
