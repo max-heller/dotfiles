@@ -1,0 +1,4 @@
+rofi.theme: /usr/share/rofi/themes/solarized.rasi
+rofi.hide-scrollbar: true
+rofi.terminal: termite
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
