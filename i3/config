@@ -35,7 +35,10 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show drun -display-drun ""
+bindsym $mod+d exec --no-startup-id rofi -show drun -display-drun ""
+
+# start rofi calc
+bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -display-calc ""
 
 # connect to brown ssh
 bindsym $mod+s exec termite -e "ssh brown"
