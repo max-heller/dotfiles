@@ -35,7 +35,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec rofi -show drun -display-drun ""
 
 # connect to brown ssh
 bindsym $mod+s exec termite -e "ssh brown"
@@ -152,12 +152,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676e7d
-set $urgent-bg-color     #e53935
-set $indicator-color     #a0a0a0
+set $bg-color            #002b36
+set $inactive-bg-color   #002b36
+set $text-color          #839496
+set $inactive-text-color #586e75
+set $urgent-bg-color     #dc322f
+set $indicator-color     #93a1a1
 
 # set window colors
 #                       border             background         text                 indicator
@@ -175,7 +175,7 @@ bar {
 
 	colors {
         background $bg-color
-        separator #757575
+        separator #586e75
         #                  border             background         text
         focused_workspace  $bg-color          $bg-color          $text-color
         inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
@@ -185,7 +185,6 @@ bar {
 
 # floating windows
 for_window [class="Pavucontrol"] floating enable
-for_window [class="Kalu"] floating enable
 
 ## Multimedia Keys
 
