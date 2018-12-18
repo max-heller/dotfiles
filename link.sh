@@ -9,4 +9,4 @@ ln -s -f $dotfiles/rofi/config ~/.config/rofi
 ln -s -f $dotfiles/rofi/solarized.rasi ~/.config/rofi
 ln -s -f $dotfiles/ssh/config ~/.ssh
 ln -s -f $dotfiles/termite/config ~/.config/termite
-ln -s -f $dotfiles/.zshrc ~
+ln -s -f $dotfiles/zsh/.zshrc ~
