@@ -50,10 +50,10 @@ battery 0 {
     low_threshold = 11
     threshold_type = percentage
     hide_seconds = true
-    status_chr = " "
-    status_bat = " "
-    status_unk = " "
-    status_full = " "
+    status_chr = ""
+    status_bat = ""
+    status_unk = ""
+    status_full = ""
 }
 
 run_watch DHCP {
@@ -66,7 +66,7 @@ run_watch VPN {
 
 #%Y-%m-%d %H:%M:%S'
 tztime local {
-    format = " %m/%d 🕑 %I:%M"
+    format = " %m/%d  %I:%M"
 }
 
 load {
@@ -74,11 +74,11 @@ load {
 }
 
 cpu_usage {
-    format = " %usage"
+    format = "龍 %usage"
 }
 
 cpu_temperature 0 {
-    format = " %degrees°C"
+    format = " %degrees°C"
 }
 
 disk "/" {
@@ -103,8 +103,8 @@ disk "/" {
 #}
 
 volume master {
-    format = "🔊 %volume"
-    format_muted = "🔇"
+    format = "墳 %volume"
+    format_muted = "ﱝ"
     device = "default"
     mixer = "Master"
     mixer_idx = 0
