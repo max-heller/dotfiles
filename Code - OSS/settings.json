@@ -19,7 +19,6 @@
     "editor.smoothScrolling": true,
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
-    "files.autoGuessEncoding": true,
     "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
