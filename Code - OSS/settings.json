@@ -1,7 +1,7 @@
 {
     "sshfs.configs": [
         {
-            "root": "~/course/cs0330",
+            "root": "~/course",
             "host": "ssh.cs.brown.edu",
             "port": 22,
             "username": "mheller6",
@@ -33,7 +33,7 @@
     "zenMode.restore": true,
     "git.autofetch": true,
     "window.zoomLevel": 0,
-    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0}",
     "git.confirmSync": false,
     "workbench.colorTheme": "Solarized Dark",
 }
