@@ -1,0 +1,28 @@
+# Packages
+yay
+yay -Rns awesome-terminal-fonts dmenu grub2-theme-antergos kalu mate-calc notify-osd numix-frost-themes numix-icon-theme numix-icon-theme-square pcmanfm xfburn
+yay -S --needed bibata-cursor-theme code discord dunst gdb google-chrome gtk-theme-numix-solarized insync ncurses5-compat-libs nerd-fonts-complete oh-my-zsh-git papirus-icon-theme playerctl racket rofi rofi-calc rofi-dmenu slack-desktop spotify texlive-bibtexextra texlive-core texlive-fontsextra texlive-formatsextra texlive-games texlive-humanities texlive-latexextra texlive-music texlive-pictures texlive-pstricks texlive-publishers texlive-science thunar valgrind zsh zsh-syntax-highlighting
+
+# VSCode Extensions
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension eamodio.gitlens
+code --install-extension formulahendry.code-runner
+code --install-extension James-Yu.latex-workshop
+code --install-extension karyfoundation.racket
+code --install-extension Kelvin.vscode-sshfs
+code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+
+# Load configs
+git clone https://github.com/mxheller/configs.git ~/configs
+
+# Install GRUB theme and update GRUB
+wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# Link dotfiles
+./link.sh
+
+# Set ZSH as shell
+chsh -s /usr/bin/zsh
