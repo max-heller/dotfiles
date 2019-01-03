@@ -15,8 +15,8 @@ code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension naumovs.color-highlight
 
-# Load configs
-git clone https://github.com/mxheller/configs.git ~/configs
+# Load dotfiles
+git clone https://github.com/mxheller/dotfiles.git ~/dotfiles
 
 # Install GRUB theme and update GRUB
 wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
@@ -24,6 +24,9 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # Link dotfiles
 ./link.sh
+
+# Copy chrome shortcuts
+cp $dotfiles/applications/* ~/.local/share/applications/
 
 # Set ZSH as shell
 chsh -s /usr/bin/zsh
