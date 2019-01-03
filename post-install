@@ -13,6 +13,7 @@ code --install-extension Kelvin.vscode-sshfs
 code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
+code --install-extension naumovs.color-highlight
 
 # Load configs
 git clone https://github.com/mxheller/configs.git ~/configs
