@@ -1,3 +1,5 @@
+dotfiles=$(dirname "$(realpath $0)")
+
 # Packages
 yay
 yay -Rns awesome-terminal-fonts dmenu grub2-theme-antergos i3status kalu mate-calc notify-osd numix-frost-themes numix-icon-theme numix-icon-theme-square pcmanfm xfburn
@@ -16,15 +18,12 @@ code --install-extension ms-vscode.cpptools
 code --install-extension naumovs.color-highlight
 code --install-extension streetsidesoftware.code-spell-checker
 
-# Load dotfiles
-git clone https://github.com/mxheller/dotfiles.git ~/dotfiles
-
 # Install GRUB theme and update GRUB
 wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # Link dotfiles
-./link.sh
+$dotfiles/link.sh
 
 # Copy chrome shortcuts
 cp $dotfiles/applications/* ~/.local/share/applications/
