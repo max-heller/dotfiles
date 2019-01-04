@@ -14,6 +14,7 @@ code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension naumovs.color-highlight
+code --install-extension streetsidesoftware.code-spell-checker
 
 # Load dotfiles
 git clone https://github.com/mxheller/dotfiles.git ~/dotfiles
