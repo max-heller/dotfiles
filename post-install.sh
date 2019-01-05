@@ -3,7 +3,7 @@ dotfiles=$(dirname "$(realpath $0)")
 # Packages
 yay
 yay -Rns awesome-terminal-fonts dmenu grub2-theme-antergos i3status kalu mate-calc notify-osd numix-frost-themes numix-icon-theme numix-icon-theme-square pcmanfm xfburn
-yay -S --needed adobe-source-code-pro-fonts bibata-cursor-theme code discord dunst gdb google-chrome gtk-theme-numix-solarized insync ncurses5-compat-libs oh-my-zsh-git papirus-icon-theme playerctl polybar racket rofi rofi-calc rofi-dmenu slack-desktop spotify texlive-bibtexextra texlive-core texlive-fontsextra texlive-formatsextra texlive-games texlive-humanities texlive-latexextra texlive-music texlive-pictures texlive-pstricks texlive-publishers texlive-science thunar ttf-font-awesome valgrind zsh zsh-syntax-highlighting
+yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code discord dunst gdb google-chrome gtk-theme-numix-solarized insync maven ncurses5-compat-libs oh-my-zsh-git papirus-icon-theme playerctl polybar racket redshift rofi rofi-calc rofi-dmenu slack-desktop spotify texlive-most thunar ttf-font-awesome valgrind zsh zsh-syntax-highlighting
 
 # VSCode Extensions
 code --install-extension CoenraadS.bracket-pair-colorizer
@@ -30,3 +30,6 @@ cp $dotfiles/applications/* ~/.local/share/applications/
 
 # Set ZSH as shell
 chsh -s /usr/bin/zsh
+
+# Enable services
+systemctl --user enable redshift

@@ -9,6 +9,8 @@ rm -r ~/.config/i3
 ln -s -f $dotfiles/i3 ~/.config
 mkdir ~/.config/polybar
 ln -s -f $dotfiles/polybar/config ~/.config/polybar
+mkdir ~/.config/redshift
+ln -s -f $dotfiles/redshift/redshift.conf ~/.config/redshift
 rm -r ~/.config/rofi
 ln -s -f $dotfiles/rofi ~/.config
 mkdir ~/.ssh
