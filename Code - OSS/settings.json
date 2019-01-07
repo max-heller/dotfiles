@@ -36,4 +36,9 @@
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0}",
     "git.confirmSync": false,
     "workbench.colorTheme": "Solarized Dark",
+    "editor.rulers": [
+        80
+    ],
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.currentLine.enabled": false,
 }
