@@ -13,8 +13,6 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "line-thin",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.smoothScrolling": true,
     "editor.tabCompletion": "on",
@@ -41,4 +39,9 @@
     ],
     "gitlens.currentLine.scrollable": false,
     "gitlens.currentLine.enabled": false,
+    "files.enableTrash": false,
+    "catch2TestExplorer.executables": "bin/*",
+    "testExplorer.onStart": "retire",
+    "cmake.autoRestartBuild": true,
+    "cmake.configureOnOpen": true
 }

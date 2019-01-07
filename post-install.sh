@@ -9,14 +9,17 @@ yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension eamodio.gitlens
 code --install-extension formulahendry.code-runner
+code --install-extension hbenl.vscode-test-explorer
 code --install-extension James-Yu.latex-workshop
-code --install-extension karyfoundation.racket
 code --install-extension Kelvin.vscode-sshfs
+code --install-extension matepek.vscode-catch2-test-adapter
 code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension naumovs.color-highlight
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension twxs.cmake
+code --install-extension vector-of-bool.cmake-tools
 
 # Install GRUB theme and update GRUB
 wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
