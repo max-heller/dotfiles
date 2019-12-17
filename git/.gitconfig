@@ -3,3 +3,6 @@
 	name = mxheller
 [credential]
 	helper = store
+[core]
+	excludesfile = /home/max/.gitignore
+	autocrlf = input

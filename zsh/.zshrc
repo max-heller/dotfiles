@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/Downloads/arm-none-eabi/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -63,7 +63,6 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
   colored-man-pages
   extract
 )
@@ -123,3 +122,20 @@ compinit
 
 # Custom Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# NVM (for Critical Review)
+source /usr/share/nvm/init-nvm.sh
+
+# FZF
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# added by travis gem
+[ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/max/google-cloud-sdk/path.zsh.inc' ]; then . '/home/max/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/max/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/max/google-cloud-sdk/completion.zsh.inc'; fi

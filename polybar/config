@@ -27,9 +27,9 @@ font-2 = "Font Awesome 5 Brands:size=10;"
 
 modules-left = ewmh
 modules-center = date
-modules-right = xbacklight pulseaudio wlan battery powermenu
+modules-right = xbacklight pulseaudio battery powermenu #wlan
 
-tray-position =
+tray-position = right
 
 cursor-click = pointer
 
