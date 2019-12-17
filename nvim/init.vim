@@ -25,9 +25,13 @@ Plug 'unblevable/quick-scope'
 Plug 'bfredl/nvim-miniyank'
 Plug 'machakann/vim-highlightedyank'
 Plug 'airblade/vim-rooter'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 filetype indent plugin on
+
+" Rust
+let g:rustfmt_autosave = 1
 
 " Vimtex
 let g:vimtex_fold_enabled = 1 
@@ -45,6 +49,7 @@ let g:coc_global_extensions = [
             \ 'coc-git', 
             \ 'coc-python',
             \ 'coc-json',
+            \ 'coc-rls',
             \ 'coc-vimtex']
 
 " Autocomplete
