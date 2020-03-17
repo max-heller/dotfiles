@@ -44,7 +44,7 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -118,27 +118,34 @@ bindkey -e
 zstyle :compinstall filename '/home/max/.zshrc'
 
 autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+#faster load, may require manual load after installs
+  for dump in ~/.zcompdump(N.mh+24); do
+    # Install plugins if there are plugins that have not been installed
+    compinit
+  done
+  compinit -C
 
 # Custom Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # NVM (for Critical Review)
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # FZF
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 # added by travis gem
-[ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
+# [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/max/google-cloud-sdk/path.zsh.inc' ]; then . '/home/max/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/home/max/google-cloud-sdk/path.zsh.inc' ]; then . '/home/max/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/max/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/max/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/home/max/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/max/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GOPATH=~/Documents/go
+export PATH=$PATH:$GOPATH/bin

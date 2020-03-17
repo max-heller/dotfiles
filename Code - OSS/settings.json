@@ -54,4 +54,8 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.rendererType": "dom",
     "python.formatting.provider": "yapf",
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "go.gopath": "~/Documents/go"
 }

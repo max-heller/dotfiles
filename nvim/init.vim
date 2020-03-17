@@ -26,6 +26,8 @@ Plug 'bfredl/nvim-miniyank'
 Plug 'machakann/vim-highlightedyank'
 Plug 'airblade/vim-rooter'
 Plug 'rust-lang/rust.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'rgreenblatt/vim-forge'
 
 call plug#end()
 filetype indent plugin on
@@ -50,7 +52,9 @@ let g:coc_global_extensions = [
             \ 'coc-python',
             \ 'coc-json',
             \ 'coc-rls',
-            \ 'coc-vimtex']
+            \ 'coc-go',
+            \ 'coc-vimtex'
+            \]
 
 " Autocomplete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -81,26 +85,6 @@ set noshowmode
 " UltiSnips
 " let g:UltiSnipsUsePythonVersion = 3
 
-
-" Disable arrow keys
-cnoremap <Down> <Nop>
-cnoremap <Left> <Nop>
-cnoremap <Right> <Nop>
-cnoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-nnoremap <Up> <Nop>
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Up> <Nop>
-
-
 " Remapping
 map Y y$
 nnoremap U <C-r>
@@ -108,17 +92,20 @@ nmap <space>s <cmd>source %<cr>
 tnoremap <M-space> <C-\><C-n>
 nnoremap <M-c> :call SwitchColorScheme()<CR>
 
+noremap <up>    <C-W>+
+noremap <down>  <C-W>-
+noremap <left>  3<C-W>>
+noremap <right> 3<C-W><
 nnoremap zJ zczjzo
 nnoremap zK zczkzo
 nnoremap gV `[v`]
 nnoremap <M-=> <C-w>=
 nnoremap <M--> <C-w>_
-nnoremap <M-\> <C-w>|
+nnoremap <M-\> <C-w><bar>
 nnoremap <M-H> <C-w>H
 nnoremap <M-J> <C-w>J
 nnoremap <M-K> <C-w>K
 nnoremap <M-L> <C-w>L
-
 
 nmap <M-n> <Plug>(coc-diagnostic-next)
 nmap <M-p> <Plug>(coc-diagnostic-prev)
