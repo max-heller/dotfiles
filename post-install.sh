@@ -2,24 +2,39 @@ dotfiles=$(dirname "$(realpath $0)")
 
 # Packages
 yay
-yay -Rns awesome-terminal-fonts dmenu grub2-theme-antergos i3status kalu mate-calc notify-osd numix-frost-themes numix-icon-theme numix-icon-theme-square pcmanfm xfburn
-yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code discord dunst gdb google-chrome gtk-theme-numix-solarized insync maven ncurses5-compat-libs oh-my-zsh-git papirus-icon-theme playerctl polybar racket redshift rofi rofi-calc rofi-dmenu slack-desktop spotify texlive-most thunar ttf-font-awesome valgrind zsh zsh-syntax-highlighting
+yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code cowsay discord dunst evince firefox fzf gdb google-chrome gtk-theme-numix-solarized insync oh-my-zsh-git playerctl polybar racket redshift rofi rofi-calc rofi-dmenu rustup slack-desktop spin spotify termite texlive-most thunar tree ttf-font-awesome zoom zsh zsh-syntax-highlighting zulip-desktop-bin
 
 # VSCode Extensions
+code --install-extension andys8.jest-snippets
+code --install-extension bierner.color-info
+code --install-extension bierner.markdown-checkbox
+code --install-extension bungcip.better-toml
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension eamodio.gitlens
 code --install-extension formulahendry.code-runner
-code --install-extension hbenl.vscode-test-explorer
+code --install-extension GrapeCity.gc-excelviewer
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension hdg.live-html-previewer
+code --install-extension HookyQR.minify
 code --install-extension James-Yu.latex-workshop
+code --install-extension karyfoundation.racket
 code --install-extension Kelvin.vscode-sshfs
-code --install-extension matepek.vscode-catch2-test-adapter
 code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.Go
 code --install-extension naumovs.color-highlight
+code --install-extension Orta.vscode-jest
+code --install-extension PKief.markdown-checkbox
+code --install-extension pmneo.tsimporter
+code --install-extension polypus74.trusty-rusty-snippets
+code --install-extension rbbit.typescript-hero
+code --install-extension rust-lang.rust
+code --install-extension SethPoulsen.vscode-language-pyret
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension twxs.cmake
-code --install-extension vector-of-bool.cmake-tools
+code --install-extension tht13.html-preview-vscode
+code --install-extension vscodevim.vim
+code --install-extension wayou.vscode-todo-highlight
 
 # Install GRUB theme and update GRUB
 wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
@@ -29,7 +44,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 $dotfiles/link.sh
 
 # Copy chrome shortcuts
-cp $dotfiles/applications/* ~/.local/share/applications/
+# cp $dotfiles/applications/* ~/.local/share/applications/
 
 # Set ZSH as shell
 chsh -s /usr/bin/zsh
