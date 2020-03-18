@@ -1,0 +1,3 @@
+[submodule "nvim/pack/themes/opt/solarized8"]
+	path = nvim/pack/themes/opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git

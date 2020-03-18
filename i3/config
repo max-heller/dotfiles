@@ -35,10 +35,10 @@ bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -n
 bindsym $mod+s exec termite -e "ssh brown"
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+ntilde focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -47,10 +47,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ntilde move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -59,10 +59,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Mod1+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Mod1+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -87,35 +87,16 @@ bindsym $mod+a focus parent
 ## Workspaces
 
 # variables
-set $workspace1 1: 
-set $workspace2 2: 
-set $workspace3 3: 
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
 set $workspace4 4
 set $workspace5 5
 set $workspace6 6
 set $workspace7 7
 set $workspace8 8
 set $workspace9 9
-set $workspace10 10: 
-
-# assign programs to workspaces
-#Todoist
-assign [class="Google-chrome" instance="crx_bgjohebimpjdhhocbknplfelpmdhifhd"] $workspace1
-#Trello
-assign [class="Google-chrome" instance="crx_kpaineeoakhldighhiaaipkpcmockign"] $workspace1
-#Calendar
-assign [class="Google-chrome" instance="crx_nkciffeafpjoepmgjbjnckchbgfjnjhp"] $workspace1
-#FB Messenger
-assign [class="Google-chrome" instance="crx_mglbnecglhoimpifplbpmpghccgadbno"] $workspace2
-#SMS
-assign [class="Google-chrome" instance="crx_nngjipgjhfkaeimbhgmodlbhligdflei"] $workspace2
-#Brown Gmail
-assign [class="Google-chrome" instance="crx_miilmjmgkdhdabfkjkilgecbhbchboem"] $workspace2
-#Gmail
-assign [class="Google-chrome" instance="crx_kmhopmchchfpfdcdjodmpfaaphdclmlj"] $workspace2
-assign [class="discord"] $workspace2
-assign [class="Slack"] $workspace2
-for_window [class="Spotify"] move to workspace $workspace10
+set $workspace10 10
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -222,12 +203,13 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym $mod+w exec "/usr/bin/google-chrome-stable"
 
 # Autostart apps
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id ~/.config/i3/ARandR.sh
-exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "insync start"
 exec --no-startup-id "nm-applet"
+exec --no-startup-id ~/.fehbg &
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
 
 # Disable title
 new_window pixel 0
+
+# Gaps
+gaps inner 20

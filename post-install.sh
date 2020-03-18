@@ -2,7 +2,7 @@ dotfiles=$(dirname "$(realpath $0)")
 
 # Packages
 yay
-yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code cowsay discord dunst evince firefox fzf gdb google-chrome gtk-theme-numix-solarized insync oh-my-zsh-git playerctl polybar racket redshift rofi rofi-calc rofi-dmenu rustup slack-desktop spin spotify termite texlive-most thunar tree ttf-font-awesome zoom zsh zsh-syntax-highlighting zulip-desktop-bin
+yay -S --needed --norebuild adobe-source-code-pro-fonts bibata-cursor-theme code cowsay discord dunst feh fff firefox fzf gdb go google-chrome gtk-theme-numix-solarized insync lightdm lightdm-slick-greeter lightdm-settings lxappearance npm oh-my-zsh-git playerctl polybar racket redshift rofi rofi-calc rofi-dmenu rustup slack-desktop spin spotify-tui termite texlive-most tree ttf-font-awesome zathura zoom zsh zsh-syntax-highlighting zulip-desktop-bin
 
 # VSCode Extensions
 code --install-extension andys8.jest-snippets

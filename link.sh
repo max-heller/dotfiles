@@ -7,15 +7,19 @@ ln -s -f $dotfiles/dunst ~/.config
 ln -s -f $dotfiles/git/.gitconfig ~
 rm -r ~/.config/i3
 ln -s -f $dotfiles/i3 ~/.config
-mkdir ~/.config/polybar
 ln -s -f $dotfiles/nvim ~/.config/nvim
+rm -r ~/.config/polybar/config
 ln -s -f $dotfiles/polybar/config ~/.config/polybar
+rm -r ~/.config/redshift
 mkdir ~/.config/redshift
 ln -s -f $dotfiles/redshift/redshift.conf ~/.config/redshift
 rm -r ~/.config/rofi
 ln -s -f $dotfiles/rofi ~/.config
+ln -s -f $dotfiles/spotify-tui ~/.config/spotify-tui
+rm -r ~/.ssh
 mkdir ~/.ssh
 ln -s -f $dotfiles/ssh/config ~/.ssh
+rm -r ~/.config/termite
 mkdir ~/.config/termite
 ln -s -f $dotfiles/termite/config ~/.config/termite
 ln -s -f $dotfiles/zsh/.zshrc ~
