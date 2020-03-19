@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'lifepillar/vim-solarized8'
 Plug 'lervag/vimtex'
+Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'romainl/vim-cool' 
@@ -402,8 +403,8 @@ function! FloatingFZF()
 endfunction
 
 
-set conceallevel=1
-let g:tex_conceal='admgs'
+set conceallevel=2
+let g:tex_conceal='abdgms'
 
 " move among buffers with CTRL
 nnoremap <C-h> :bnext<CR>
