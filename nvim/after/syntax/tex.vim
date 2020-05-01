@@ -13,8 +13,13 @@ if has('conceal')
   syn match texMathSymbol '\s*\\rangle\>'  contained conceal cchar=⟩
   syn match texMathSymbol '\\\\' contained conceal
 
-  " Include space after greek letters:
-  syn match texMathSymbol '\\Delta\> ' contained conceal cchar=Δ
+  " PHIL 1880
+  syn match texMathSymbol '\\Delta'  contained conceal cchar=Δ
+  syn match texMathSymbol '\\D'      contained conceal cchar=Δ
+  syn match texMathSymbol '\\G'      contained conceal cchar=Γ
+  syn match texMathSymbol '\\S'      contained conceal cchar=Σ
+  syn match texMathSymbol '\\M'      contained conceal cchar=𝓜
+  syn match texMathSymbol '\\N'      contained conceal cchar=𝓝
 
   " Use regular greek letters when subscript/superscript not available:
   syn match texSubscripts '\\mu\>'         contained conceal cchar=μ

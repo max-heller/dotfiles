@@ -28,6 +28,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'airblade/vim-rooter'
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'wlangstroth/vim-racket'
 Plug 'rgreenblatt/vim-forge'
 
 call plug#end()
@@ -54,7 +55,9 @@ let g:coc_global_extensions = [
             \ 'coc-json',
             \ 'coc-rls',
             \ 'coc-go',
-            \ 'coc-vimtex'
+            \ 'coc-vimtex',
+            \ 'coc-tsserver',
+            \ 'coc-prettier'
             \]
 
 " Autocomplete
@@ -324,7 +327,6 @@ au TermOpen * setlocal listchars= nonumber norelativenumber
 set inccommand=nosplit
 set cursorline
 set wildmenu
-set autochdir 
 set hidden
 set wildmode=longest,list,full
 set cmdheight=1
@@ -428,3 +430,6 @@ let g:startify_custom_header = ""
           \ { 'type': 'files',     'header': ['   MRU']            },
           \ { 'type': 'sessions',  'header': ['   Sessions']       },
           \ ]
+
+" Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile

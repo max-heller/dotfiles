@@ -134,6 +134,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # FZF
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
 
 # added by travis gem
 # [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
@@ -146,5 +147,5 @@ source /usr/share/fzf/completion.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export GOPATH=~/Documents/go
-export PATH=$PATH:$GOPATH/bin
+export GOPATH=~/documents/go
+export PATH=$PATH:$GOPATH/bin:/home/max/.cargo/bin
