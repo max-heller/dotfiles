@@ -30,6 +30,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'wlangstroth/vim-racket'
 Plug 'rgreenblatt/vim-forge'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 call plug#end()
 filetype indent plugin on
@@ -433,3 +435,6 @@ let g:startify_custom_header = ""
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+inoremap jk <esc>
+inoremap kj <esc>
