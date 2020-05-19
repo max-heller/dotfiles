@@ -95,7 +95,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e=nvim
 alias ls=ls --color=auto
 alias ll=ll --color=auto
 
@@ -127,25 +126,10 @@ autoload -Uz compinit
 # Custom Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-# NVM (for Critical Review)
-# source /usr/share/nvm/init-nvm.sh
-
 # FZF
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
-
-# added by travis gem
-# [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/home/max/google-cloud-sdk/path.zsh.inc' ]; then . '/home/max/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-# if [ -f '/home/max/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/max/google-cloud-sdk/completion.zsh.inc'; fi
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export GOPATH=~/documents/go
-export PATH=$PATH:$GOPATH/bin:/home/max/.cargo/bin
+export PATH=$PATH:/home/max/.cargo/bin
