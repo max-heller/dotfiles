@@ -206,6 +206,7 @@ bindsym $mod+w exec "/usr/bin/google-chrome-stable"
 exec --no-startup-id "insync start"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id ~/.fehbg &
+exec --no-startup-id /usr/bin/lxqt-policykit-agent &
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
 
 # Disable title
