@@ -132,4 +132,4 @@ source /usr/share/fzf/completion.zsh
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH=$PATH:/home/max/.cargo/bin
+export PATH=$PATH:/home/max/.cargo/bin:/home/max/.local/bin
