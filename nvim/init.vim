@@ -1,4 +1,4 @@
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 " Plugins
 filetype off
@@ -55,7 +55,7 @@ let g:coc_global_extensions = [
             \ 'coc-git', 
             \ 'coc-python',
             \ 'coc-json',
-            \ 'coc-rls',
+            \ 'coc-rust-analyzer',
             \ 'coc-go',
             \ 'coc-vimtex',
             \ 'coc-tsserver',
@@ -113,13 +113,18 @@ nnoremap <M-J> <C-w>J
 nnoremap <M-K> <C-w>K
 nnoremap <M-L> <C-w>L
 
+" Page up/down
+nnoremap <C-j> <C-d>
+nnoremap <C-k> <C-u>
+
+" COC
 nmap <M-n> <Plug>(coc-diagnostic-next)
 nmap <M-p> <Plug>(coc-diagnostic-prev)
 nmap <space>f <Plug>(coc-format-selected)
 nmap <space>F <Plug>(coc-format)
 nmap <space>D <Plug>(coc-declaration)
 nmap <space>d <Plug>(coc-definition)
-nmap <space>d <Plug>(coc-definition)
+nmap gd <Plug>(coc-definition)
 nmap <space>i <Plug>(coc-implementation)
 nmap <space>u <Plug>(coc-references)
 nmap <space>re <Plug>(coc-refactor)
@@ -435,6 +440,3 @@ let g:startify_custom_header = ""
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-inoremap jk <esc>
-inoremap kj <esc>
