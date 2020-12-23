@@ -1,11 +1,11 @@
 dotfiles=$(dirname "$(realpath $0)")
 
+ln -s -f $dotfiles/alacritty ~/.config
 rm -r ~/.config/dunst
 ln -s -f $dotfiles/dunst ~/.config
 ln -s -f $dotfiles/git/.gitconfig ~
 rm -r ~/.config/i3
 ln -s -f $dotfiles/i3 ~/.config
-ln -s -f $dotfiles/kitty ~/.config
 ln -s -f $dotfiles/nvim ~/.config
 rm -rf ~/.config/polybar
 mkdir ~/.config/polybar

@@ -1,3 +1,4 @@
+alacritty
 bat
 bibata-cursor-theme
 discord
@@ -9,7 +10,6 @@ google-chrome
 gtk-theme-numix-solarized
 insync
 jre-openjdk
-kitty
 lightdm
 lightdm-settings
 lightdm-slick-greeter
@@ -19,7 +19,6 @@ mons
 neovim-nightly
 npm
 oh-my-zsh-git
-otf-fira-mono-italic-git
 playerctl
 polybar
 python
@@ -37,6 +36,8 @@ thunar
 tree
 tslint
 ttf-fira-code
+ttf-fira-mono
+ttf-fira-sans
 ttf-font-awesome
 typescript
 unzip
