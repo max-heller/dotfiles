@@ -14,7 +14,6 @@ mkdir -p ~/.config/redshift
 ln -s -f $dotfiles/redshift/redshift.conf ~/.config/redshift
 rm -r ~/.config/rofi
 ln -s -f $dotfiles/rofi ~/.config
-ln -s -f $dotfiles/spotify-tui ~/.config/spotify-tui
 mkdir -p ~/.ssh
 ln -s -f $dotfiles/ssh/config ~/.ssh
 ln -s -f $dotfiles/zathura ~/.config
