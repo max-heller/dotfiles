@@ -13,7 +13,7 @@ jre-openjdk
 lightdm
 lightdm-settings
 lightdm-slick-greeter
-lxappearance
+lxappearance-gtk3
 lxqt-policykit
 mons
 neovim-nightly
@@ -42,7 +42,7 @@ ttf-font-awesome
 typescript
 unzip
 zathura
-zathura-pdf-poppler
+zathura-pdf-mupdf
 zip
 zoom
 zsh
