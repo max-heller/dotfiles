@@ -1,6 +1,6 @@
 [user]
 	email = max.a.heller@gmail.com
-	name = mxheller
+	name = max-heller
 [core]
 	excludesfile = /home/max/.gitignore
 	autocrlf = input
