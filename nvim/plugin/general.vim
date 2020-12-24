@@ -48,3 +48,6 @@ set splitright
 
 " Persist undo history
 set undofile
+
+" Don't save netrw history
+let g:netrw_dirhistmax = 0

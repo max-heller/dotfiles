@@ -8,9 +8,18 @@ local on_attach = function(client, bufnr)
     lsp_status.on_attach(client, bufnr)
 end
 
+-- Enable diagnostics
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    underline = true,
+    virtual_text = true,
+    signs = true,
+    update_in_insert = true,
+  }
+)
+
 -- Configure rust-analyzer
--- https://github.com/neovim/nvim-lspconfig#rust_analyzer
-lsp.rust_analyzer.setup({
+lsp.rust_analyzer.setup{
     on_attach = on_attach,
     capabilities = lsp_status.capabilities,
     settings = {
@@ -23,14 +32,22 @@ lsp.rust_analyzer.setup({
             ["procMacro.enable"] = true,
         }
     },
-})
+}
 
--- Enable diagnostics
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = true,
-    virtual_text = true,
-    signs = true,
-    update_in_insert = true,
-  }
-)
+-- Configure ocaml-lsp
+lsp.ocamllsp.setup{
+    on_attach = on_attach,
+    capabilities = lsp_status.capabilities,
+}
+
+-- Configure latex lsp
+lsp.texlab.setup{
+    on_attach = on_attach,
+    capabilities = lsp_status.capabilities,
+}
+
+-- Configure vim lsp
+lsp.vimls.setup{
+    on_attach = on_attach,
+    capabilities = lsp_status.capabilities,
+}

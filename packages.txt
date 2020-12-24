@@ -31,6 +31,7 @@ rofi-calc
 rofi-dmenu
 rustup
 slack-desktop
+starship-bin
 texlive-core
 thunar
 tree
@@ -41,6 +42,7 @@ ttf-fira-sans
 ttf-font-awesome
 typescript
 unzip
+vim-language-server
 zathura
 zathura-pdf-mupdf
 zip
