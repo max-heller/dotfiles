@@ -16,5 +16,6 @@ rm -r ~/.config/rofi
 ln -s -f $dotfiles/rofi ~/.config
 mkdir -p ~/.ssh
 ln -s -f $dotfiles/ssh/config ~/.ssh
+ln -s -f $dotfiles/starship.toml ~/.config
 ln -s -f $dotfiles/zathura ~/.config
 ln -s -f $dotfiles/zsh/.zshrc ~

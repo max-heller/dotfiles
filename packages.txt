@@ -7,6 +7,7 @@ feh
 fzf
 gdb
 google-chrome
+grml-zsh-config
 gtk-theme-numix-solarized
 insync
 jre-openjdk
@@ -18,7 +19,6 @@ lxqt-policykit
 mons
 neovim-nightly
 npm
-oh-my-zsh-git
 playerctl
 polybar
 python
@@ -48,4 +48,6 @@ zathura-pdf-mupdf
 zip
 zoom
 zsh
+zsh-autosuggestions
+zsh-completions
 zsh-syntax-highlighting
