@@ -4,3 +4,7 @@ add_newline = false
 # Disable line break in prompt
 [line_break]
 disabled = true
+
+# Disable previous command duration in prompt
+[cmd_duration]
+disabled = true
