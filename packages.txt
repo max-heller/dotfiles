@@ -33,7 +33,6 @@ rustup
 slack-desktop
 starship-bin
 texlive-core
-thunar
 tree
 tslint
 ttf-fira-code
