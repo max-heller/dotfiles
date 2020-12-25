@@ -25,6 +25,7 @@ polybar
 python
 python-pip
 python-pylint
+python-pynvim
 redshift
 ripgrep
 rofi

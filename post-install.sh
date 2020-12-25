@@ -12,5 +12,3 @@ chsh -s /usr/bin/zsh
 
 # Enable services
 systemctl --user enable redshift
-
-pip3 install --user --upgrade pynvim
