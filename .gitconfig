@@ -4,7 +4,5 @@
 [core]
 	excludesfile = /home/max/.gitignore
 	autocrlf = input
-[oh-my-zsh]
-	hide-dirty = 1
 [pull]
 	rebase = true
