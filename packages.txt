@@ -6,6 +6,7 @@ dunst
 feh
 fzf
 gdb
+gimp
 google-chrome
 grml-zsh-config
 gtk-theme-numix-solarized

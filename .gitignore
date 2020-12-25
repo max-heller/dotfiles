@@ -1,5 +1,21 @@
-.config/alacritty/machine_specific.yml
 .config/Code\ -\ OSS
-.config/pulse
+.config/GIMP
+.config/Insync
+.config/Slack
+.config/alacritty/machine_specific.yml
+.config/autostart
+.config/cef_user_data
+.config/dconf
+.config/discord
+.config/google-chrome
+.config/gpicview
+.config/gtk-2.0
+.config/gtk-3.0
+.config/htop
+.config/lxqt
+.config/lxsession
+.config/menus
 .config/pavucontrol.ini
+.config/pulse
 .config/systemd
+.config/zoomus.conf
