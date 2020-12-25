@@ -2,3 +2,4 @@
 .config/Code\ -\ OSS
 .config/pulse
 .config/pavucontrol.ini
+.config/systemd
