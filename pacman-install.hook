@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Adding installed packaged to /home/max/dotfiles/packages.txt
+When = PostTransaction
+NeedsTargets = true
+Exec = /bin/sh -c 'cat >> /home/max/dotfiles/packages.txt'

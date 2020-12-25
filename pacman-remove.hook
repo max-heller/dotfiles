@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Removing uninstalled packaged from /home/max/dotfiles/packages.txt
+When = PostTransaction
+NeedsTargets = true
+Exec = /bin/sh -c 'xargs -I{} sed -i "/^{}$/d" /home/max/dotfiles/packages.txt'
