@@ -11,7 +11,6 @@ google-chrome
 grml-zsh-config
 gtk-theme-numix-solarized
 insync
-jre-openjdk
 lightdm
 lightdm-settings
 lightdm-slick-greeter
@@ -36,12 +35,10 @@ slack-desktop
 starship-bin
 texlive-core
 tree
-tslint
 ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
 ttf-font-awesome
-typescript
 unzip
 vim-language-server
 zathura
