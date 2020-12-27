@@ -4,10 +4,6 @@ local lsp = require'lspconfig'
 local lsp_status = require'lsp-status'
 lsp_status.register_progress()
 
-local on_attach = function(client, bufnr)
-    lsp_status.on_attach(client, bufnr)
-end
-
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -18,7 +14,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
--- Configure rust-analyzer
+-- rust
 lsp.rust_analyzer.setup{
     on_attach = on_attach,
     capabilities = lsp_status.capabilities,
@@ -34,20 +30,11 @@ lsp.rust_analyzer.setup{
     },
 }
 
--- Configure ocaml-lsp
-lsp.ocamllsp.setup{
-    on_attach = on_attach,
-    capabilities = lsp_status.capabilities,
-}
+-- ocaml
+lsp.ocamllsp.setup{}
 
--- Configure latex lsp
-lsp.texlab.setup{
-    on_attach = on_attach,
-    capabilities = lsp_status.capabilities,
-}
+-- latex
+lsp.texlab.setup{}
 
--- Configure vim lsp
-lsp.vimls.setup{
-    on_attach = on_attach,
-    capabilities = lsp_status.capabilities,
-}
+-- vim
+lsp.vimls.setup{}
