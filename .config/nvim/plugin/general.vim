@@ -39,9 +39,6 @@ set smartcase
 " that have not been typed.
 set lazyredraw
 
-" Column markers
-set colorcolumn=80,100
-
 " Split below and to the right with :split and :vsplit, respectively
 set splitbelow
 set splitright
