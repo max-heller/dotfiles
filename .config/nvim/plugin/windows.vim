@@ -25,6 +25,11 @@ call MapCmd("r", "Rg<cr>")
 call MapCmd("R", "Rg ")
 call MapCmd("s", "Startify<cr>")
 
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --line-number --no-heading --color=always --smart-case --hidden -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)
+
 xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>
 
 function! ExecuteMacroOverVisualRange()
