@@ -29,6 +29,7 @@ opam
 playerctl
 polybar
 prettier
+pulseaudio-bluetooth
 python
 python-pip
 python-pylint
