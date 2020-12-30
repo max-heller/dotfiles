@@ -1,4 +1,5 @@
 alacritty
+arm-none-eabi-gcc
 bat
 bibata-cursor-theme
 code
@@ -27,10 +28,12 @@ npm
 opam
 playerctl
 polybar
+prettier
 python
 python-pip
 python-pylint
 python-pynvim
+qmk
 redshift
 ripgrep
 rofi
