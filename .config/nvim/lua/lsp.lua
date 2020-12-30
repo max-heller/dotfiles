@@ -22,10 +22,8 @@ lsp.rust_analyzer.setup{
         ["rust-analyzer"] = {
             cargo = {
                 allFeatures = true,
-                loadOutDirsFromCheck = true,
             },
             ["checkOnSave.allFeatures"] = true,
-            ["procMacro.enable"] = true,
         }
     },
 }
