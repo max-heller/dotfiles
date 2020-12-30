@@ -4,6 +4,7 @@
 .config/Slack
 .config/alacritty/machine_specific.yml
 .config/autostart
+.config/calibre
 .config/cef_user_data
 .config/dconf
 .config/discord
