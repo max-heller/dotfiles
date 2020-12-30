@@ -1,5 +1,6 @@
 alacritty
 arm-none-eabi-gcc
+arm-none-eabi-newlib
 bat
 bibata-cursor-theme
 code
