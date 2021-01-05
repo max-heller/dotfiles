@@ -48,3 +48,6 @@ set undofile
 
 " Don't save netrw history
 let g:netrw_dirhistmax = 0
+
+" Don't display message on auto-chdir
+let g:rooter_silent_chdir = 1

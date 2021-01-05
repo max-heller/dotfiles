@@ -6,6 +6,8 @@
 .config/autostart
 .config/calibre
 .config/cef_user_data
+.config/coc
+.config/configstore
 .config/dconf
 .config/discord
 .config/google-chrome

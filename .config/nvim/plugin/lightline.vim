@@ -6,16 +6,11 @@ let g:lightline.active = {
     \ }
 let g:lightline.component_function = {
     \ 'gitbranch': 'FugitiveHead',
-    \ 'lspstatus': 'LspStatus',
+    \ 'lspstatus': 'coc#status',
     \ }
+
+" Update lightline on COC change
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 " Hide mode from status line (already in lightline)
 set noshowmode
-
-" Function to obtain current LSP status, if any
-function! LspStatus() abort
-  if luaeval('#vim.lsp.buf_get_clients() > 0')
-    return luaeval("require('lsp-status').status()")
-  endif
-  return ''
-endfunction

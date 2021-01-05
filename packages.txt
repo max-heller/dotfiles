@@ -47,6 +47,7 @@ starship-bin
 steam
 texlive-core
 thermald
+tidy
 tree
 ttf-fira-code
 ttf-fira-mono
@@ -54,6 +55,7 @@ ttf-fira-sans
 ttf-font-awesome
 unzip
 vim-language-server
+yarn
 zathura
 zathura-pdf-mupdf
 zip

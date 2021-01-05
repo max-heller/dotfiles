@@ -53,25 +53,10 @@ Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 " Solarized theme
 Plug 'lifepillar/vim-solarized8'
 
-" Syntastic is a syntax checking plugin
-" It runs files through external syntax checkers and displays any
-" resulting errors to the user
-Plug 'scrooloose/syntastic'
+" Language server support
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 
-" Rust file detection, syntax highlighting, formatting,
-" Syntastic integration, and more
+" Rust file detection, syntax highlighting, formatting, etc.
 Plug 'rust-lang/rust.vim'
-
-" Collection of common configurations for the Nvim LSP client
-Plug 'neovim/nvim-lspconfig'
-
-" Extensions to built-in LSP, for example, providing type inlay hints
-Plug 'tjdevries/lsp_extensions.nvim'
-
-" Autocompletion framework for built-in LSP
-Plug 'nvim-lua/completion-nvim'
-
-" Language server status in status line
-Plug 'nvim-lua/lsp-status.nvim'
 
 call plug#end()
