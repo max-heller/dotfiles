@@ -1,3 +1,4 @@
+1password-bin
 alacritty
 arm-none-eabi-gcc
 arm-none-eabi-newlib
@@ -11,6 +12,7 @@ feh
 fzf
 gdb
 gimp
+github-cli
 gnome-screenshot
 google-chrome
 gpicview

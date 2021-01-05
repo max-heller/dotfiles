@@ -1,3 +1,4 @@
+.config/1Password
 .config/Code\ -\ OSS
 .config/GIMP
 .config/Insync
@@ -10,6 +11,7 @@
 .config/configstore
 .config/dconf
 .config/discord
+.config/gh/hosts.yml
 .config/google-chrome
 .config/gpicview
 .config/gtk-2.0
