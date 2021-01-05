@@ -55,6 +55,7 @@ ttf-fira-sans
 ttf-font-awesome
 unzip
 vim-language-server
+wol
 yarn
 zathura
 zathura-pdf-mupdf
