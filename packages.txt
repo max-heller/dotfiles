@@ -24,7 +24,7 @@ lightdm-slick-greeter
 lxappearance-gtk3
 lxqt-policykit
 mons
-neovim-nightly
+neovim
 npm
 opam
 playerctl
