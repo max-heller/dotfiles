@@ -5,6 +5,9 @@ nnoremap <C-l> :bprev<CR>
 " Toggle undo tree
 nnoremap <F5> :MundoToggle<CR>
 
+" Toggle directory tree
+nnoremap <C-t> :NERDTreeToggle<CR>
+
 " Miniyank
 nmap p <Plug>(miniyank-autoput)
 nmap P <Plug>(miniyank-autoPut)

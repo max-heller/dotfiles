@@ -6,6 +6,9 @@ Plug 'honza/vim-snippets'
 " Undo tree visualizer
 Plug 'simnalamburt/vim-mundo'
 
+" Directory tree
+Plug 'preservim/nerdtree'
+
 " Adds more targets for operating on with i, I, a, A
 Plug 'wellle/targets.vim'
 
