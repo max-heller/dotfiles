@@ -25,6 +25,7 @@
     "rust-analyzer.checkOnSave.allFeatures": true,
     "coc.preferences.formatOnSaveFiletypes": ["*"],
     "prettier.tabWidth": 4,
+    "prettier.proseWrap": "always",
     "suggest.completionItemKindLabels": {
         "function": "\uf794",
         "method": "\uf6a6",

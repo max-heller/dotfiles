@@ -21,7 +21,7 @@ export FZF_DEFAULT_COMMAND='rg --hidden --files'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # PATH
-export PATH=$PATH:/home/max/.cargo/bin:/home/max/.local/bin
+export PATH=$PATH:/home/max/.cargo/bin:/home/max/.local/bin:/home/max/.gem/ruby/2.7.0/bin
 
 # opam configuration
 test -r /home/max/.opam/opam-init/init.zsh && . /home/max/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

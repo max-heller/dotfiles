@@ -4,7 +4,6 @@ arm-none-eabi-gcc
 arm-none-eabi-newlib
 bat
 bibata-cursor-theme
-code
 discord
 dune
 dunst
@@ -26,6 +25,7 @@ lightdm-slick-greeter
 lxappearance-gtk3
 lxqt-policykit
 mons
+nasm
 neovim
 npm
 opam
@@ -56,7 +56,11 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-font-awesome
 unzip
+vagrant
 vim-language-server
+virtualbox
+virtualbox-host-modules-arch
+visual-studio-code-bin
 wol
 yarn
 zathura
