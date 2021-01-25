@@ -27,6 +27,7 @@ lxqt-policykit
 mons
 nasm
 neovim
+nnn
 npm
 opam
 playerctl
