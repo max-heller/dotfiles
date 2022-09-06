@@ -28,3 +28,17 @@ test -r /home/max/.opam/opam-init/init.zsh && . /home/max/.opam/opam-init/init.z
 
 # Starship prompt
 eval "$(starship init zsh)"
+
+# Brown SSHFS
+BROWNCS_MOUNTPOINT=~/brown-cs
+BROWNCS_LOGIN=mheller6
+myfuse() {
+    printf "... attempting to mount brown filesystem for user ${BROWNCS_LOGIN} on local file ${BROWNCS_MOUNTPOINT}\n"
+    mkdir -p ${BROWNCS_MOUNTPOINT}
+    sshfs "${BROWNCS_LOGIN}@ssh.cs.brown.edu:/home/${BROWNCS_LOGIN}" "${BROWNCS_MOUNTPOINT}"
+}
+fixfuse() {
+    printf "... attempting to unmount brown filesystem from local file ${BROWNCS_MOUNTPOINT}\n"
+    fusermount -u "${BROWNCS_MOUNTPOINT}"
+    rmdir "${BROWNCS_MOUNTPOINT}"
+}
