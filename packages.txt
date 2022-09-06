@@ -83,13 +83,11 @@ ttf-nerd-fonts-symbols-2048-em
 typescript
 unzip
 vim-language-server
-virtualbox-host-modules-arch
 visual-studio-code-bin
 vlc
 wireshark-cli
 wireshark-qt
 wol
-yarn
 zathura
 zathura-pdf-mupdf
 zip
