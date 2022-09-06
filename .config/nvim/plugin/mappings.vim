@@ -45,6 +45,7 @@ nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
 
 " Return to normal mode
+tnoremap <M-q> <C-\><C-n>
 tnoremap <M-space> <C-\><C-n>
 
 " ??? (folding)
