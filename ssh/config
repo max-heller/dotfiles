@@ -1,5 +1,4 @@
 Host brown
-    HostName pk-ssh.cs.brown.edu
+    HostName ssh.cs.brown.edu
     User mheller6
     Port 22
-    IdentityFile ~/.ssh/rsa_id
