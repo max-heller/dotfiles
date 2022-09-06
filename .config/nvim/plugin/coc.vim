@@ -3,7 +3,7 @@ let g:coc_global_extensions = [
             \ 'coc-git',
             \ 'coc-json',
             \ 'coc-prettier',
-            \ 'coc-python',
+            \ 'coc-pyright',
             \ 'coc-rust-analyzer',
             \ 'coc-snippets',
             \ 'coc-syntax',
