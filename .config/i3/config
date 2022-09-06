@@ -32,7 +32,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -display-drun ""
 bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -display-calc ""
 
 # connect to brown ssh
-bindsym $mod+s exec termite -e "ssh brown"
+bindsym $mod+s exec alacritty -e ssh brown
 
 # change focus
 bindsym $mod+h focus left
