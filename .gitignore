@@ -1,11 +1,8 @@
 .config/1Password
 .config/Code
-.config/Code\ -\ OSS
 .config/GIMP
 .config/Insync
 .config/Slack
-.config/Unknown Organization
-.config/VirtualBox
 .config/alacritty/machine_specific.yml
 .config/autostart
 .config/calibre
@@ -29,3 +26,7 @@
 .config/systemd
 .config/zoomus.conf
 .config/fish/fish_variables
+.config/Thunar
+.config/gatsby
+.config/vlc
+.config/xfce4
