@@ -28,3 +28,4 @@
 .config/qalculate
 .config/systemd
 .config/zoomus.conf
+.config/fish/fish_variables
