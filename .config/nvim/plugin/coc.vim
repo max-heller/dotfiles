@@ -10,12 +10,10 @@ let g:coc_global_extensions = [
             \ 'coc-vimlsp',
             \ 'coc-vimtex',
             \ 'coc-word',
+            \ 'coc-go',
+            \ 'coc-tsserver',
+            \ 'coc-clangd',
             \]
-
-" Autocomplete
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 " Snippets
 xmap <Tab> <Plug>(coc-snippets-select)

@@ -62,6 +62,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 " Rust file detection, syntax highlighting, formatting, etc.
 Plug 'rust-lang/rust.vim'
 
+" Typescript and React
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
 " Markdown previewing
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
